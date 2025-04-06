@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="yixin0313" />
+    <meta name="author" content="NWPU-LHH" />
     
     <title id="title"></title>
 
@@ -85,7 +85,6 @@
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
@@ -93,34 +92,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#research">RESEARCH</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">NEWS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#experience">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">COLLEAGUES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#experience">SERVICE</a>
-                    </li>
-                  
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#research">RESEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#news">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#colleagues">COLLEAGUES</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#awards">AWARDS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#service">SERVICE</a></li>
                 </ul>
             </div>
         </div>
-    </nav
+    </nav> <!-- 修复：补全nav闭合标签 -->
 
-    
-        <section class="top-section" id="Photo">
+    <!-- 添加padding-top防止导航栏遮挡 -->
+    <section class="top-section" id="Photo" style="padding-top: 80px;">
         <div class="container px-5">
-            <div class="avatar-container" style="display: flex; align-items: center; gap: 30 px;">
+            <div class="avatar-container" style="display: flex; align-items: center; gap: 30px;"> <!-- 修正：移除px前的空格 -->
                 <!-- 左侧文字内容 -->
                 <div class="avatar-text">
                     <h2>Huihui Li (李晖晖)&ensp;|&ensp;Assoc. Prof.</h2>
@@ -128,85 +114,54 @@
                 </div>
                 <!-- 右侧头像 -->
                 <div id="avatar">
-                    <img class="shadow" src="static/assets/img/LHH.png" style="width: 150 px; height: auto;">
+                    <img class="shadow" src="static/assets/img/LHH.png" style="width: 150px; height: auto;"> <!-- 修正：移除px前的空格 -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- Photo -->
 
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+    <!-- 各内容区块使用唯一ID -->
+    <section class="bg-gradient-primary-to-secondary-light mt-5 md-5" id="research">
         <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"></i>Research </h2>
-            </header>
+            <header><h2>Research</h2></header>
+            <div class="main-body" id="research-md"></div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary-dark mt-5 md-5" id="news">
+        <div class="container px-5">
+            <header><h2>News and Updates</h2></header>
+            <div class="main-body" id="news-md"></div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="publications">
+        <div class="container px-5">
+            <header><h2>Selected Publications</h2></header>
+            <div class="main-body" id="publications-md"></div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="colleagues">
+        <div class="container px-5">
+            <header><h2>My Colleagues</h2></header>
+            <div class="main-body" id="colleagues-md"></div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="awards">
+        <div class="container px-5">
+            <header><h2>Major Honors & Awards</h2></header>
             <div class="main-body" id="awards-md"></div>
-
         </div>
     </section>
-    <!-- Awards -->
 
-    <!-- Experience -->
-    <section class="bg-gradient-primary-to-secondary-dark mt5 md5" id="experience">
+    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="service">
         <div class="container px-5">
-            <header>
-                <h2 id="experience-subtitle"></i>News and Updates </h2>
-            </header>
-            <div class="main-body" id="experience-md"></div>
+            <header><h2>Academic Service</h2></header>
+            <div class="main-body" id="service-md"></div>
         </div>
     </section>
-    <!-- Experience -->
-
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"></i>&nbsp;Selected Publications</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-        <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"></i>&nbsp;My Colleagues</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-
-        <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"></i>&nbsp;Major Honors & Awards</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-     <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"></i>&nbsp;Academic Service</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
