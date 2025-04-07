@@ -74,7 +74,7 @@
     <!-- 原有meta和link标签保持不变 -->
     <style>
         .content-container {
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
             padding: 20px;
             background-color: rgba(255,255,255,0.9); /* 可选：增加背景透明度 */
@@ -82,7 +82,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
         }
         
-        @media (max-width: 992px) {
+        @media (max-width: 1000px) {
             .content-container {
                 max-width: 95%;
                 padding: 15px;
@@ -128,83 +128,259 @@
                 </ul>
             </div>
         </div>
-    </nav> <!-- 修复：补全nav闭合标签 -->
+    </nav> 
 
-    <!-- 添加padding-top防止导航栏遮挡 -->
-<!--     <section class="bg-gradient-primary-to-secondary-light mt-5 md-5" id="Photo" style="padding-top: 150px;">
-        <div class="container px-5">
-            <div class="avatar-container" style="display: flex; align-items: center; gap: 30px;"> -->
-                <!-- 左侧文字内容 -->
-<!--                 <div class="avatar-text">
-                    <h2>Huihui Li (李晖晖)&ensp;|&ensp;Assoc. Prof.</h2>
-                    <p>这里是文字段落，可以写一些介绍性内容。这里是文字段落，可以写一些介绍性内容。</p>
-                </div> -->
-                <!-- 右侧头像 -->
-<!--                 <div id="avatar">
-                    <img class="shadow" src="static/assets/img/LHH.png" style="width: 150px; height: auto;">
-                </div> -->
-<!--             </div>
+    <section class="bg-gradient-primary-to-secondary-gray py-5" id="Photo">
+        <div class="content-container">
+            <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                
+                <div class="main-body" style="max-width: 1400px;">  
+                    <h2 class="text-center py-2">Huihui Li (李晖晖) | Assoc. Prof.</h2>
+                    <p class="bio-text" style="
+                    max-width: 80ch; 
+                    margin: 0 auto; 
+                    text-align: justify; 
+                    font-family: Georgia, serif">
+                        Dr. Huihui Li is an Assoc. Prof. at Northwestern Polytechnical University, Xi'an, China. 
+                        She received the M.S. and Ph.D. degrees from Northwestern Polytechnical University, 
+                        Xi'an, China, in 2003 and 2007, respectively. 
+                        Her main research interests are computer vision, pattern recognition, 
+                        and remote sensing image image processing and analysis.
+                        She is or has been a reviewer for IEEE TVCST, ACM MM, Journal of Automation, Control and Decision Making, etc.
+                        She is a expert in correspondence evaluation for the National Natural Science Foundation of China, and is a member of China Graphics Society, China Artificial Intelligence Society, Automation Society.
+                    </p>
+                </div>
+                
+                <div id="avatar" class="flex-shrink-0">
+                    <img src="static/assets/img/LHH.png" style="width: 200px; height: auto; " >
+                </div>
+            </div>
+            <div class="main-body" style="max-width: 1400px; max-width: 80ch; margin: 0 auto; text-align: justify; font-family: Georgia, serif">      
+                    <ul>
+                        <li>
+                            <tr align="left">
+                                <td><a href="https://zdhxy.nwpu.edu.cn/English.htm">School of Automation</a></td>
+                            </tr>
+                        </li>
+                
+                        <li>
+                            <tr align="left">
+                                <td><a href="https://en.nwpu.edu.cn/">Northwestern Polytechnical University</a></td>
+                            </tr>
+                        </li>
+                
+                        <li>
+                            <tr align="left">
+                                <td><a href="https://github.com/NWPU-LHH">Github</a></td>
+                            </tr>
+                        </li>
+
+                        <li>
+                            <tr align="left">
+                                <td><a href="https://teacher.nwpu.edu.cn/lihuihui.html">中文主页</a></td>
+                            </tr>
+                        </li>
+                
+                        <li>
+                            <tr align="left">
+                                <td><p> Email: lihhui@nwpu.edu.cn</p></td>
+                            </tr>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="bg-gradient-primary-to-secondary-gray py-5" id="research">
+        <div class="content-container">
+            <header><h2 class="text-center mb-4">Research</h2></header>
+            <div class="main-body" style="
+                        max-width: 80ch; 
+                        margin: 0 auto; 
+                        text-align: justify; 
+                        font-family: Georgia, serif" id="research-md">
+                <p class="bio-text" >
+                My current work mainly involves computer vision, pattern recognition, and deep learning. Specifically, it includes the following aspects:</p>
+                <ul>
+                <li>Multimodal data learning and fusion: 
+                    <ul>
+                    <li>Cross-modal graphic matching and retrieval;</li>
+                    <li>SAR and multispectral image fusion and conversion generation;</li>
+                    <li>Target detection and recognition based on visual relations.</li>
+                    </ul>
+                </li>
+                <li>UAV intelligent visual perception (visual navigation, localization and tracking).</li>
+                <li>Vision-based intelligent monitoring and state detection of unattended industrial scenes.</li>
+                </ul>	
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="bg-gradient-primary-to-secondary-gray py-5" id="news">
+        <div class="content-container">
+            <header><h2 class="text-center mb-4">News</h2></header>
+            <div class="main-body" id="news-md">
+                
+            </div>
         </div>
     </section> -->
 
-    <section class="top-section py-5" id="Photo">
-    <div class="content-container">
-        <div class="d-flex flex-column flex-md-row align-items-center gap-4">
-            <!-- 左侧文字内容 -->
-            <div class="flex-grow-1">
-                <h2>Huihui Li (李晖晖) | Assoc. Prof.</h2>
-                <p class="lead">Ming-Ming Cheng is a professor at the College of Computer Science, Nankai University, leading the Media Computing Lab. He received his Ph.D. from Tsinghua University in 2012 and then worked with Prof. Philip Torr in Oxford for two years. His research interests include computer vision and computer graphics. He has published over 100 papers in leading journals and conferences, such as IEEE TPAMI, ACM TOG, IEEE CVPR, etc. Many of his algorithms have become quite popular in the community, receiving more than 40,000+ paper citations. He received several research awards, including the National Science Foundation for Distinguished Young Scholars of China, the ACM China Rising Star Award, the IBM Global SUR award, etc. He is a senior member of the IEEE and on the editorial boards of the IEEE TPAMI and IEEE TIP. </p>
+    <section class="bg-gradient-primary-to-secondary-gray py-5" id="publications">
+        <div class="content-container">
+            <header><h2 class="text-center mb-4">Selected Publications</h2></header>
+            <div class="main-body", style=" font-family: Georgia, serif;">
+            <ul>
+                <li>
+                    <p>
+                        <b>Seg-CycleGAN: SAR-to-Optical Image Translation Guided by a Downstream Task. Hannuo Zhang, <strong>Huihui Li*</strong>, Jiarui Lin, Yujie Zhang, Jianghua Fan, Hang Liu. </b>
+                        <em>IEEE Geoscience and Remote Sensing Letters</em>&nbsp(<em><font color="#C00000">IEEE GRSL</font></em>), <em>2025</em>. [<a href="https://ieeexplore.ieee.org/abstract/document/10872937">paper</a>] [<a href="https://github.com/NWPU-LHH/Seg-CycleGAN">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Dual Stream Relation Learning Network for Image-Text Retrieval. Dongqing Wu, <strong>Huihui Li*</strong>, Cang Gu, Lei Guo, Hang Liu. </b>
+                        <em>IEEE Transactions on Multimedia</em>&nbsp(<em><font color="#C00000">IEEE TMM</font></em>), <em>2024</em>. [<a href="https://ieeexplore.ieee.org/document/10814705">paper</a>] [<a href="https://github.com/NWPU-LHH">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Spatial-Channel Attention Transformer with Pseudo Regions for Remote Sensing Image-Text Retrieval. Dongqing Wu, <strong>Huihui Li*</strong>, Xinyuan Hou, Cuili Xu, Gong Cheng, Lei Guo, and Hang Liu. </b>
+                        <em>IEEE Transactions on Geoscience and Remote Sensing</em>&nbsp(<em><font color="#C00000">IEEE TGRS</font></em>), <em>2024</em>. [<a href="https://ieeexplore.ieee.org/document/10510483">paper</a>] [<a href="https://github.com/NWPU-LHH">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Feature First: Advancing Image-Text Retrieval through Improved Visual Features. Dongqing Wu, <strong>Huihui Li*</strong>, Cang Gu, Hang Liu, Cuili Xu, Yinxuan Hou, Lei Guo. </b>
+                        <em>IEEE Transactions on Multimedia</em>&nbsp(<em><font color="#C00000">IEEE TMM</font></em>), <em>2024</em>. [<a href="https://ieeexplore.ieee.org/abstract/document/10252008">paper</a>] [<a href="https://github.com/NWPU-LHH/Feature-First">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Instrument Detection and Reading Based on Arbitrary Quadrilateral. <strong>Huihui Li*</strong>, Yulin Feng, Yi Zhao, Qianru Wen, Hang Liu. </b>
+                        <em>IEEE Transactions ON Instrumentation and Measurement</em>&nbsp(<em><font color="#C00000">IEEE TIM</font></em>), <em>2024</em>. [<a href="https://ieeexplore.ieee.org/document/10721357">paper</a>] [<a href="https://github.com/NWPU-LHH">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Bel: Batch Equalization Loss for scene graph generation. <strong>Huihui Li*</strong>, Baorong Liu, Dongqing Wu, Hang Liu, Lei Guo. </b>
+                        <em>Pattern Analysis and Applications</em>&nbsp(<em><font color="#C00000">PAA</font></em>), <em>2023</em>. [<a href="https://link.springer.com/article/10.1007/s10044-023-01199-z">paper</a>] [<a href="https://github.com/NWPU-LHH">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Multiscale Generative Adversarial Network Based on Wavelet Feature Learning for SAR-to-Optical Image Translation. <strong>Huihui Li*</strong>, Cang Gu, Dongqing Wu, Gong Cheng, Lei Guo, Hang Liu. </b>
+                        <em>IEEE Transactions on Geoscience and Remote Sensing</em>&nbsp(<em><font color="#C00000">IEEE TGRS</font></em>), <em>2022</em>. [<a href="https://ieeexplore.ieee.org/document/9912365">paper</a>] [<a href="https://github.com/NWPU-LHH/WFLM-GAN">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Improving Fusion of Region Features and Grid Features via Two-Step Interaction for Image-Text Matching. Dongqing Wu, <strong>Huihui Li*</strong>, Cang Gu, Lei Guo, Hang Liu. </b>
+                        <em>Proceedings of the 30th ACM International Conference on Multimedia</em>&nbsp(<em><font color="#C00000">ACM MM</font></em>), <em>2022</em>. [<a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548223">paper</a>] [<a href="https://github.com/NWPU-LHH/ACM-MM">code</a>]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <b>Global-Guided Asymmetric Attention Network for Image-Text Matching. Dongqing Wu, <strong>Huihui Li*</strong>, Yinge Tang, Lei Guo, Hang Liu. </b>
+                        <em>Neurocomputing</em>, <em>2022</em>. [<a href="https://www.sciencedirect.com/science/article/pii/S0925231222000595">paper</a>] [<a href="https://github.com/NWPU-LHH">code</a>]
+                    </p>
+                </li>
+            </ul>	
             </div>
-            <!-- 右侧头像 -->
-            <div id="avatar" class="flex-shrink-0">
-                <img class="shadow rounded-circle" src="static/assets/img/LHH.png" style="width: 180px; height: auto;">
-            </div>
-        </div>
-    </div>
-    </section>
-
- 
-    <section class="bg-gradient-primary-to-secondary-gray py-5" id="research">
-        <div class="container px-5">
-            <header><h2 class="text-center mb-4">Research</h2></header>
-           <div class="main-body" id="research-md"></div> 
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-dark mt-5 md-5" id="news">
-        <div class="container px-5">
-            <header><h2>News and Updates</h2></header>
-            <div class="main-body" id="news-md"></div>
-        </div>
-    </section>
-
-    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="publications">
-        <div class="container px-5">
-            <header><h2>Selected Publications</h2></header>
-            <div class="main-body" id="publications-md"></div>
-        </div>
-    </section>
-
-    <section class="bg-gradient-primary-to-secondary-dark mt-5 md-5" id="colleagues">
-        <div class="container px-5">
-            <header><h2>My Colleagues</h2></header>
+    <!-- <section class="bg-gradient-primary-to-secondary-gray py-5" id="colleagues">
+        <div class="content-container">
+            <header><h2 class="text-center mb-4">My Colleagues</h2></header>
             <div class="main-body" id="colleagues-md"></div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="awards">
-        <div class="container px-5">
-            <header><h2>Major Honors & Awards</h2></header>
-            <div class="main-body" id="awards-md"></div>
+    <section class="bg-gradient-primary-to-secondary-gray py-5" id="awards">
+        <div class="content-container">
+            <header><h2 class="text-center mb-4">Major Honors & Awards</h2></header>
+            <div class="main-body" style=" font-family: Georgia, serif;">
+                <ul>
+                    <li>
+                        <p>
+                            2022年: 领跑者5000—中国精品科技期刊顶尖学术论文;
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            2015年: 《仪器仪表学报》优秀论文;
+                        </p>
+                    </li>
+    
+                    <li>
+                        <p>
+                            2012年: 国防技术发明奖三等奖;
+                        </p>
+                    </li>
+    
+                    <li>
+                        <p>
+                            2011年: 中国百篇最具影响力的论文.
+                        </p>
+                    </li>
+                </ul>	
+            </div>
         </div>
     </section>
+<!-- 
+    <section class="bg-gradient-primary-to-secondary-gray py-5" id="service">
+        <div class="content-container">
+            <header><h2 class="text-center mb-4">Academic Service</h2></header>
+            <div class="main-body"  style=" font-family: Georgia, serif;">
+            <ul>
+                <li>
+                    <p>
+                        Reviewer for IEEE TVCST, ACM MM
+                    </p>
+                </li>
 
-    <section class="bg-gradient-primary-to-secondary-dark mt-5 md-5" id="service">
-        <div class="container px-5">
-            <header><h2>Academic Service</h2></header>
-            <div class="main-body" id="service-md"></div>
+                <li>
+                    <p>
+                        中国国家自然科学基金函评专家
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        中国图象图形学会会员
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        中国人工智能学会会员
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        自动化学会会员
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        自动化学报、控制与决策等期刊审稿人
+                    </p>
+                </li>
+            </ul>	
+            </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
