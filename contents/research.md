@@ -1,8 +1,6 @@
 <p>My current work mainly involves computer vision, pattern recognition, and deep learning. Specifically, it includes the following aspects:</p>
 
 <ul>
-  <li>First item</li>
-  
   <li>Multimodal data learning and fusion: 
     <ul>
       <li>Cross-modal graphic matching and retrieval;</li>
