@@ -1,10 +1,15 @@
-My current work mainly involves computer vision, pattern recognition, and deep learning. Specifically, it includes the following aspects:
+<p>My current work mainly involves computer vision, pattern recognition, and deep learning. Specifically, it includes the following aspects:</p>
 
-- Multimodal data learning and fusion: 
-1. Cross-modal graphic matching and retrieval;
-2. SAR and multispectral image fusion and conversion generation;
-3. Target detection and recognition based on visual relations.
-
-- UAV intelligent visual perception (visual navigation, localization and tracking).
-
-- Vision-based intelligent monitoring and state detection of unattended industrial scenes.
+<ul>
+  <li>First item</li>
+  
+  <li>Multimodal data learning and fusion: 
+    <ul>
+      <li>Cross-modal graphic matching and retrieval;</li>
+      <li>SAR and multispectral image fusion and conversion generation;</li>
+      <li>Target detection and recognition based on visual relations.</li>
+    </ul>
+  </li>
+  <li>UAV intelligent visual perception (visual navigation, localization and tracking).</li>
+  <li>Vision-based intelligent monitoring and state detection of unattended industrial scenes.</li>
+</ul>	
