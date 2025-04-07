@@ -69,6 +69,33 @@
             }
         };
     </script>
+
+
+    <!-- 原有meta和link标签保持不变 -->
+    <style>
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.9); /* 可选：增加背景透明度 */
+            border-radius: 8px; /* 可选：圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 可选：轻微阴影 */
+        }
+        
+        @media (max-width: 992px) {
+            .content-container {
+                max-width: 95%;
+                padding: 15px;
+            }
+        }
+        
+        /* 确保固定导航栏不遮挡内容 */
+        body { 
+            padding-top: 80px; 
+        }
+    </style>
+
+
     <script type="text/javascript" id="MathJax-script"
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script type="text/javascript" id="MathJax-script" async
@@ -104,41 +131,43 @@
     </nav> <!-- 修复：补全nav闭合标签 -->
 
     <!-- 添加padding-top防止导航栏遮挡 -->
-    <section class="bg-gradient-primary-to-secondary-light mt-5 md-5" id="Photo" style="padding-top: 150px;">
+<!--     <section class="bg-gradient-primary-to-secondary-light mt-5 md-5" id="Photo" style="padding-top: 150px;">
         <div class="container px-5">
-            <div class="avatar-container" style="display: flex; align-items: center; gap: 30px;">
+            <div class="avatar-container" style="display: flex; align-items: center; gap: 30px;"> -->
                 <!-- 左侧文字内容 -->
-                <div class="avatar-text">
+<!--                 <div class="avatar-text">
                     <h2>Huihui Li (李晖晖)&ensp;|&ensp;Assoc. Prof.</h2>
                     <p>这里是文字段落，可以写一些介绍性内容。这里是文字段落，可以写一些介绍性内容。</p>
-                </div>
+                </div> -->
                 <!-- 右侧头像 -->
-                <div id="avatar">
+<!--                 <div id="avatar">
                     <img class="shadow" src="static/assets/img/LHH.png" style="width: 150px; height: auto;">
-                </div>
+                </div> -->
+<!--             </div>
+        </div>
+    </section> -->
+
+    <section class="top-section py-5" id="Photo">
+    <div class="content-container">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+            <!-- 左侧文字内容 -->
+            <div class="flex-grow-1">
+                <h2>Huihui Li (李晖晖) | Assoc. Prof.</h2>
+                <p class="lead">这里是文字段落，可以写一些介绍性内容...</p>
+            </div>
+            <!-- 右侧头像 -->
+            <div id="avatar" class="flex-shrink-0">
+                <img class="shadow rounded-circle" src="static/assets/img/LHH.png" style="width: 180px; height: auto;">
             </div>
         </div>
+    </div>
     </section>
 
  
-    <section class="bg-gradient-primary-to-secondary-gray mt-5 md-5" id="research">
-        <div class="container px-5">
-            <header><h2>Research</h2></header>
-            <p>My current work mainly involves computer vision, pattern recognition, and deep learning. Specifically, it includes the following aspects:</p>
-
-            <ul>
-              <li>Multimodal data learning and fusion: 
-                <ul>
-                  <li>Cross-modal graphic matching and retrieval;</li>
-                  <li>SAR and multispectral image fusion and conversion generation;</li>
-                  <li>Target detection and recognition based on visual relations.</li>
-                </ul>
-              </li>
-              <li>UAV intelligent visual perception (visual navigation, localization and tracking).</li>
-              <li>Vision-based intelligent monitoring and state detection of unattended industrial scenes.</li>
-            </ul>	
-
-<!--             <div class="main-body" id="research-md"></div> -->
+    <section class="bg-gradient-primary-to-secondary-gray py-5" id="research">
+        <div class="container">
+            <header><h2 class="text-center mb-4">Research</h2></header>
+           <div class="main-body" id="research-md"></div> 
         </div>
     </section>
 
